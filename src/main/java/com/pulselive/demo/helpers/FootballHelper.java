@@ -49,7 +49,7 @@ public class FootballHelper{
         } else if (t1.getGoalDifference() != t2.getGoalDifference()) {
             return t2.getGoalDifference() - t1.getGoalDifference(); // based on goal difference
         } else {
-            return t1.getGoalsFor() != t1.getGoalsFor() ? t2.getGoalsFor() - t1.getGoalsFor() // based on goals for
+            return t2.getGoalsFor() != t1.getGoalsFor() ? t2.getGoalsFor() - t1.getGoalsFor() // based on goals for
                     : t1.getTeamName().compareTo(t2.getTeamName()); // based on alphabetical order
         }
     }
